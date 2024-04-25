@@ -10,7 +10,7 @@ function Navbar({onDurationChange, OnClick}) {
   const [isActive, setIsActive] = useState(false);
   const [hover1, setHover1] = useState(false);
   const [hover2, setHover2] = useState(false);
-  const [selectedValue, setSelectedValue] = useState("5m"); // State to store the selected value
+  const [selectedValue, setSelectedValue] = useState("5m");
   const [isLive, setIsLive] = useState(false);
 
 
@@ -29,7 +29,6 @@ function Navbar({onDurationChange, OnClick}) {
         <nav className={`${styles.navbar}`}>
           <div className={`${styles.title}`}>
             <img src={logopng} />
-            {/* <a href='#'><h4>truefoundry</h4></a> */}
           </div>
           <ul className={`${styles.navMenu} ${isActive ? styles.active : ''}`}>
             <li className={`${hover1 ? styles.hover : styles.none}`} onMouseOver={() => { setHover1(true) }} onMouseLeave={() => { setHover1(false) }}>
