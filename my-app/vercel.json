@@ -1,0 +1,8 @@
+{
+  "rewrites": [
+    {
+      "source": "/proxy/:match*",
+      "destination": "https://frontend-assignment-5kb8.vercel.app/:match*"
+    }
+  ]
+}
