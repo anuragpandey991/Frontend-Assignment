@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import { MimicLogs } from '../api-mimic';
+import Downlogo from './Assets/arrow-up-long.png'
 
 export const LiveLog = (props) => {
 
@@ -96,7 +97,7 @@ function formatDate(date) {
          ))}
       </ul>
       </div>
-      <button id="blue-icon" class="blue-icon" onClick={scrollToBottom} style={{cursor:'pointer', position: 'fixed', bottom:'70px', right: '70px', height: '50px', width: '50px', border: 'none', borderRadius: '50%'}}><img src='./pictures.png'></img></button>
+      <button id="blue-icon" class="blue-icon" onClick={scrollToBottom} style={{cursor:'pointer', position: 'fixed', bottom:'70px', right: '70px', height: '50px', width: '50px', border: 'none', borderRadius: '50%'}}><img src={Downlogo}></img></button>
     </div>
   );
 };
