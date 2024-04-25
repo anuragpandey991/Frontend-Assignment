@@ -6,9 +6,8 @@ import ParentMetrics from './ParentMetrics';
 
 
 const Main = (props) => {
-  //console.log(props.live);
   return (
-    <Routes> {/* The Switch decides which component to show based on the current URL.*/}
+    <Routes> 
       <Route exact path='/logs' element={ props.live? <LiveLog  duration={props.duration}/> :<Log duration={props.duration}/>}> </Route>
       <Route exact path='/metrics' element={<ParentMetrics duration={props.duration}/>}></Route>
     </Routes>
@@ -16,5 +15,3 @@ const Main = (props) => {
 }
 
 export default Main;
-//props.live ?
-//: <LiveLog duration={props.duration}/>
