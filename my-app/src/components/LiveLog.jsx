@@ -4,7 +4,7 @@ import Downlogo from './Assets/arrow-up-long.png'
 
 export const LiveLog = (props) => {
 
-let start = Date.now()-30000
+let start = Date.now()-5*60*1000;
 const [startTs1, setStartTs1] = useState(start);
 const [endTs1, setEndTs1] = useState(Date.now());
 function formatDate(date) {
@@ -15,11 +15,10 @@ function formatDate(date) {
     minute: '2-digit',
     second: '2-digit',
     hour12: false,
-    timeZone: 'IST' // Change this if you want to use a different time zone
+    timeZone: 'IST'
   };
 
   const dateString = new Date(date).toLocaleDateString('en-US', options);
-  // const timeString = new Date(date).toLocaleTimeString('en-US', options);
 
   return `${dateString}`;
 }
