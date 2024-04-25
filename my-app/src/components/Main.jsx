@@ -9,8 +9,8 @@ const Main = (props) => {
   //console.log(props.live);
   return (
     <Routes> {/* The Switch decides which component to show based on the current URL.*/}
-      <Route exact path='https://frontend-assignment-5kb8.vercel.app/logs' element={ props.live? <LiveLog  duration={props.duration}/> :<Log duration={props.duration}/>}> </Route>
-      <Route exact path='https://frontend-assignment-5kb8.vercel.app/metrics' element={<ParentMetrics duration={props.duration}/>}></Route>
+      <Route exact path='/logs' element={ props.live? <LiveLog  duration={props.duration}/> :<Log duration={props.duration}/>}> </Route>
+      <Route exact path='/metrics' element={<ParentMetrics duration={props.duration}/>}></Route>
     </Routes>
   );
 }
