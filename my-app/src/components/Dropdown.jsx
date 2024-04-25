@@ -5,7 +5,6 @@ function Dropdown({ onDurationChange }) {
 
   const handleDurationChange = (duration) => {
     setSelectedDuration(duration);
-    // Pass the selected duration to the parent component
     onDurationChange(duration);
   };
 
