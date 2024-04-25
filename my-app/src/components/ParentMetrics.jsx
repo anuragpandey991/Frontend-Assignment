@@ -1,25 +1,7 @@
 import React, { useState } from 'react';
 import Metrics from './Metrics';
 
-
-// function calculateDelta(input) {
-//   if (input === "5m") {
-//     return 5 * 60 * 1000;
-//   } else if (input === "1h") {
-//     return 60 * 60 * 1000;
-//   } else if (input === "1d") {
-//     return 24 * 60 * 60 * 1000;
-//   } else {
-//     // Handle invalid input
-//     return null;
-//   }
-// }
-
 function ParentMetrics(props) {
-  // const [delta, setDelta] = useState("30000");
-  // setDelta(calculateDelta(props.duration));
-  // let startTs = Date.now();
-  // let endTs = startTs-delta;
   return (
     <div style={{margin: '5px 10px 5px 10px', border: '1px solid #CEE0F8', borderRadius: '8px'}}>
     <div style={{padding: '16px 20px 16px 20px', height: '65px', width: '100%', display: 'flex', border: '1px solid #CEE0F8', backgroundColor: '#FFF', borderRadius: '8px'}}>
