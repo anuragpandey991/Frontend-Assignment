@@ -36,16 +36,16 @@ function formatDate(date) {
 
     switch (selectedRange) {
       case '5m':
-        delta = 5 * 60 * 1000; // 5 minutes in milliseconds
+        delta = 5 * 60 * 1000;
         break;
       case '1h':
-        delta = 60 * 60 * 1000; // 1 hour in milliseconds
+        delta = 60 * 60 * 1000;
         break;
       case '1d':
-        delta = 24 * 60 * 60 * 1000; // 1 day in milliseconds
+        delta = 24 * 60 * 60 * 1000;
         break;
       default:
-        delta = 5 * 60 * 1000; // Default to last 5 minutes
+        delta = 5 * 60 * 1000;
         break;
     }
 
@@ -56,7 +56,6 @@ function formatDate(date) {
       endTs: now-delta,
       limit: 200,
     });
-    //const liveLogs = await MimicLogs.subscribeToLiveLogs();
     setStartTs1(now-delta);
     setEndTs1(now);
     setLogs(fetchedLogs);
@@ -64,7 +63,6 @@ function formatDate(date) {
   };
 
   useEffect(() => {
-    // setSelectedRange(props.duration);
     fetchLogs();
     if(count === 200){
       setCount(199);
@@ -72,10 +70,7 @@ function formatDate(date) {
       setCount(count+1);
     }
 }, [Date.now()]);
-// }, [props.duration]);
 
-
-//new Date(log.timestamp).toLocaleString()
   function scrollToBottom() {
     window.scrollTo(0, document.body.scrollHeight);
   }
