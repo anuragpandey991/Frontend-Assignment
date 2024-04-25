@@ -15,11 +15,10 @@ function formatDate(date) {
     minute: '2-digit',
     second: '2-digit',
     hour12: false,
-    timeZone: 'IST' // Change this if you want to use a different time zone
+    timeZone: 'IST'
   };
 
   const dateString = new Date(date).toLocaleDateString('en-US', options);
-  // const timeString = new Date(date).toLocaleTimeString('en-US', options);
 
   return `${dateString}`;
 }
@@ -37,16 +36,16 @@ function formatDate(date) {
 
     switch (selectedRange) {
       case '5m':
-        delta = 5 * 60 * 1000; // 5 minutes in milliseconds
+        delta = 5 * 60 * 1000;
         break;
       case '1h':
-        delta = 60 * 60 * 1000; // 1 hour in milliseconds
+        delta = 60 * 60 * 1000;
         break;
       case '1d':
-        delta = 24 * 60 * 60 * 1000; // 1 day in milliseconds
+        delta = 24 * 60 * 60 * 1000;
         break;
       default:
-        delta = 5 * 60 * 1000; // Default to last 5 minutes
+        delta = 5 * 60 * 1000;
         break;
     }
 
@@ -59,21 +58,17 @@ function formatDate(date) {
     });
     setStartTs1(now-delta);
     setEndTs1(now);
-    //const liveLogs = await MimicLogs.subscribeToLiveLogs();
     setLogs(fetchedLogs);
     setSelectedRange(props.duration);
   };
 
   useEffect(() => {
-    // setSelectedRange(props.duration);
     fetchLogs();
-// }, [Date.now()]);
-}, [props.duration]);
+  }, [props.duration]);
 
   setTimeout(() => {
     document.getElementById('para').innerText = "Already Loaded";
   }, 3000);
-//new Date(log.timestamp).toLocaleString()
 
 
   return (
