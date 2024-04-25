@@ -1,7 +1,7 @@
 {
-  "rewrites": [
+  "routes": [
     { "src": "/", "dest": "/" },
-    { "src": "/metrics", "dest": "/" }
+    { "src": "/metrics", "dest": "/" },
     { "src": "/logs", "dest": "/" }
   ]
 }
