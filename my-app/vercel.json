@@ -1,8 +1,7 @@
 {
   "rewrites": [
-    {
-      "source": "/proxy/:match*",
-      "destination": "https://frontend-assignment-5kb8.vercel.app/:match*"
-    }
+    { "src": "/", "dest": "/" },
+    { "src": "/metrics", "dest": "/" }
+    { "src": "/logs", "dest": "/" }
   ]
 }
