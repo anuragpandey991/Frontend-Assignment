@@ -1,16 +1,8 @@
 import React, { useState, useEffect } from 'react';
 import { MimicLogs } from '../api-mimic';
-import styled from 'styled-components';  
 
 export const LiveLog = (props) => {
 
-// const Li = styled.li`
-//   margin : 2px;
-//   border :1px solid red;
-// `;
-// const H1 = styled.h1`
-//   color:red;
-// `;
 let start = Date.now()-30000
 const [startTs1, setStartTs1] = useState(start);
 const [endTs1, setEndTs1] = useState(Date.now());
