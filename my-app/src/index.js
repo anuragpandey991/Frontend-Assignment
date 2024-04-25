@@ -8,19 +8,10 @@ import { BrowserRouter } from 'react-router-dom';
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <BrowserRouter>
-    <App /> {/* The various pages will be displayed by the `Main` component. */}
+    <App /> 
   </BrowserRouter>
 );
-
+reportWebVitals();
 // If you want to start measuring performance in your app, pass a function
 // to log results (for example: reportWebVitals(console.log))
 // or send to an analytics endpoint. Learn more: https://bit.ly/CRA-vitals
-reportWebVitals();
-// import { BrowserRouter } from 'react-router-dom';
-
-// ReactDOM.render((
-//   <BrowserRouter>
-//     <App /> {/* The various pages will be displayed by the `Main` component. */}
-//   </BrowserRouter>
-//   ), document.getElementById('root')
-// );
