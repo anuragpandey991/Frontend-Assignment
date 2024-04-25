@@ -31,11 +31,11 @@ function Navbar({onDurationChange, OnClick}) {
           <ul className={`${styles.navMenu} ${isActive ? styles.active : ''}`}>
             <li className={`${hover1 ? styles.hover : styles.none}`} onMouseOver={() => { setHover1(true) }} onMouseLeave={() => { setHover1(false) }}>
               <img src='./pictures/logo.png' className={`${styles.logo}`} />
-              <Link to='https://frontend-assignment-5kb8.vercel.app/metrics' className={`${styles.navLink}`}>Metrics</Link>
+              <Link to='/metrics' className={`${styles.navLink}`}>Metrics</Link>
             </li>
             <li className={`${hover2 ? styles.hover : styles.none}`} onMouseOver={() => { setHover2(true) }} onMouseLeave={() => { setHover2(false) }}>
               <img src='./pictures/logo.png' className={`${styles.logo}`} />
-              <Link to='https://frontend-assignment-5kb8.vercel.app/logs' className={`${styles.navLink}`}>Logs</Link>
+              <Link to='/logs' className={`${styles.navLink}`}>Logs</Link>
             </li>
           </ul>
           <div className={`${styles.dropdown}`}><Dropdown onDurationChange={handleDurationChange} /></div>
