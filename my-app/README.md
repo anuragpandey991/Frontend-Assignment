@@ -1,29 +1,29 @@
-#System Logs and Metrics Viewer
+# System Logs and Metrics Viewer
 Welcome to the System Logs and Metrics Viewer React application! This project provides a platform to fetch, view, and analyze system logs and metrics using dummy API data. It offers a user-friendly interface with features like real-time log updates, customizable time range selection, and dynamic chart rendering.
 
-#Features
+# Features
 Terminal-like Log View: Renders previous logs and subscribes to live logs, updating continuously using React's useEffect hook.
 Time Range Selection: Dropdown menu in the Navbar allows users to select quick time range options (e.g., Last 5 minutes, Last 1 hour), enabling live log updates accordingly.
 Scroll to Bottom Button: Allows users to navigate directly to the latest logs, which keep populating at the bottom.
 Live Log Count Display: Shows the count of live logs that have appeared below the fold, with an option to scroll to the latest logs.
 Dynamic Charts: Renders four dynamic charts (CPU usage, Network usage, Memory usage, DISK IOPS) using Chart.js with React, providing real-time updates.
-#Challenges Faced
+# Challenges Faced
 The development process encountered challenges, particularly in synchronizing data between components and passing it effectively.
 
-#Failed Features (To be Implemented in Future)
+# Failed Features (To be Implemented in Future)
 Although significant progress was made, a few features were not fully implemented:
 
 URL State Reflection: All states of logs (filters) should reflect in the URL for easy sharing and bookmarking.
 Chart Selection and Log Display: Ability to select and drag over any section within a chart (e.g., Peak/valley) to view corresponding logs for the selected time range.
-#Usage
+# Usage
 To run the application locally:
 
-###Clone this repository to your local machine.
-###Navigate to the project directory in your terminal.
-###Install dependencies using npm install.
-###Start the development server with npm start.
-###Open your browser and visit http://localhost:3000 to view the application.
-#Hosted Version
+### Clone this repository to your local machine.
+### Navigate to the project directory in your terminal.
+### Install dependencies using npm install.
+### Start the development server with npm start.
+### Open your browser and visit http://localhost:3000 to view the application.
+# Hosted Version
 You can also access a hosted version of this application [here](https://frontend-assignment-5kb8-git-master-anuragpandey991s-projects.vercel.app/?_vercel_share=qqMRVpkvrUp49j7NLupeEyQH162nG8xN).
 
 
