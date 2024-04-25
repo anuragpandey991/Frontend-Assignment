@@ -5,13 +5,13 @@ import { CategoryScale } from 'chart.js';
 Chart.register(CategoryScale);
 
 const Chart1 = ({ data, metricType }) => {
-  // document.getElementById('.btn').style.display = 'hidden';
+  
   return (
     <div style={{ width: '649px', height: '340px', backgroundColor: '#FFF', gap: '13px', borderRadius: '8px 0px 0px 0px', border: '1px 0px 0px 0px', opacity: '0px', margin: '10px 10px 10px 10px'}}>
       {data
         .filter(item => item.name === metricType)
         .map((graph, index) => (
-          <div key={index}> {/* Add a key to each graph container */}
+          <div key={index}>
             <Line
               data={{
                 labels: graph.graphLines[0].values.map((point) => {
@@ -33,8 +33,8 @@ const Chart1 = ({ data, metricType }) => {
                 plugins: {
                   title: {
                     display: true,
-                    text: metricType, // Display metric type label on the top left
-                    position: 'top', // Set the position to top-left
+                    text: metricType,
+                    position: 'top',
                     align: 'start',
                     font: {weight: '600'},
                   },
@@ -56,7 +56,7 @@ const Chart1 = ({ data, metricType }) => {
                 type: 'box',
                 layout: {
                   padding: {
-                    top: 20, // Adjust top padding to accommodate the title
+                    top: 20,
                     left: 20,
                   }
                 },
