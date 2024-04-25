@@ -7,8 +7,6 @@ function App() {
   const [selectedValue, setSelectedValue] = useState("5m"); 
   const [isLive, setIsLive] = useState(false)
   
-  // Check if the boolean value is true, then scroll to bottom
-
 
   const handleDurationChange = (value) => {
     setSelectedValue(value);
