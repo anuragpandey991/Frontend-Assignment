@@ -9,7 +9,7 @@ In the project directory, you can run:
 ### `npm start`
 
 Runs the app in the development mode.\
-Open [http://localhost:3000]([http://localhost:3000](https://frontend-assignment-5kb8-git-master-anuragpandey991s-projects.vercel.app?_vercel_share=qqMRVpkvrUp49j7NLupeEyQH162nG8xN)) to view it in your browser.
+Open [http://localhost:3000](https://frontend-assignment-5kb8-git-master-anuragpandey991s-projects.vercel.app?_vercel_share=qqMRVpkvrUp49j7NLupeEyQH162nG8xN](http://localhost:3000](https://frontend-assignment-5kb8-git-master-anuragpandey991s-projects.vercel.app?_vercel_share=qqMRVpkvrUp49j7NLupeEyQH162nG8xN) to view it in your browser.
 
 The page will reload when you make changes.\
 You may also see any lint errors in the console.
