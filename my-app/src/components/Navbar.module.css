@@ -15,11 +15,10 @@
   }
   .title {
     display: flex;
-    align-items: center; /* Add this line to align items */
+    align-items: center;
     padding-top: 0;
   }
 
-  /* navbar */
   .navbar {
     position: relative;
     background-color: rgb(255, 255, 255);
@@ -32,7 +31,6 @@
   }
   
   
-  /* logo  */
   .logo {
     margin-right:5px;
   
@@ -50,7 +48,6 @@
 
   }
   
-  /* ul  */
   .navMenu {
     display: flex;
     align-items: center;
@@ -65,10 +62,8 @@
     right: 150px;
     bottom: 18px;
   }
-  /* media queries */
   @media screen and (max-width: 780px){
     
-    /* hamburger */
     .hamburger {
       display: block;
       cursor: pointer;
@@ -84,7 +79,6 @@
           transition: 0.3s ease-in-out;
       }
   
-    /* adding active class to the bars  */
     .hamburger.active .bar:nth-child(2){
       opacity: 0;
     }
@@ -95,8 +89,6 @@
       transform: translateY(-8px) rotate(-45deg);
     }
   
-  
-    /* navMenu */
   
     .navMenu{
       position: absolute;
