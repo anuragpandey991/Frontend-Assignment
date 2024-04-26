@@ -22,11 +22,12 @@ const Chart1 = ({ data, metricType }) => {
                   minutes = minutes < 10 ? "0" + minutes : minutes;
                   return hours + ":" + minutes;
                 }),
-                datasets: graph.graphLines.map((line, index) => ({
-                  label: line.name,
-                  data: line.values.map(point => point.value),
-                  borderColor: index === 0 ? '#059669' : (index === 1 ? '#2563EB' : '#DC2626'),
-                  backgroundColor: index === 0 ? 'rgba(5, 150, 105)' : (index === 1 ? 'rgba(37, 99, 235)' : 'rgba(220, 38, 38)'),
+                datasets: graph.graphLines.map((line, index) =>({
+                        label: line.name,
+                        data: line.values.map(point => point.value),
+                        borderColor: index === 0 && metricType === "Disk IOPS" ? '#2563EB' : (index === 0 ) ? '#059669' : (index === 1 && metricType === "Disk IOPS" ? '#DC2626': (index === 1) ? '#2563EB' : '#DC2626'),
+                        backgroundColor: index === 0 ? 'rgba(37, 99, 235, 0.4)' : 'rgba(220,38,38, 0.4)' ,
+                        fill: metricType === "Disk IOPS" && index === 0 ? '1' : (metricType === "Disk IOPS" && index === 1 ? 'origin' : false), // Set fill based on index
                 })),
               }}
               options={{
