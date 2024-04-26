@@ -42,7 +42,7 @@ function formatDate(date) {
         delta = 15 * 60 * 1000;
         break;
       case '30m':
-        delta = 30 * 60 * 60 * 1000;
+        delta = 30 * 60 * 1000;
         break;
       case '1h':
         delta = 60 * 60 * 1000;
