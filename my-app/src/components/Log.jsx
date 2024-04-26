@@ -38,11 +38,20 @@ function formatDate(date) {
       case '5m':
         delta = 5 * 60 * 1000;
         break;
+      case '15m':
+        delta = 15 * 60 * 1000;
+        break;
+      case '30m':
+        delta = 30 * 60 * 60 * 1000;
+        break;
       case '1h':
         delta = 60 * 60 * 1000;
         break;
-      case '1d':
-        delta = 24 * 60 * 60 * 1000;
+      case '3h':
+        delta = 3 * 60 * 60 * 1000;
+        break;
+      case '6h':
+        delta = 6 * 60 * 60 * 1000;
         break;
       default:
         delta = 5 * 60 * 1000;
