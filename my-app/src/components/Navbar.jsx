@@ -2,8 +2,8 @@ import React, { useState } from 'react';
 import { Link } from "react-router-dom";
 import styles from './Navbar.module.css';
 import Dropdown from './Dropdown';
-import logopng from './Assets/TF logo.svg'
-import metricslogo from './Assets/metrics-gray.png'
+import logopng from './Assets/metrics-gray.png'
+import metricslogo from './Assets/list.png'
 import Logslogo from './Assets/list.png'
 
 function Navbar({onDurationChange, OnClick}) {
@@ -28,7 +28,8 @@ function Navbar({onDurationChange, OnClick}) {
       <header className="App-header">
         <nav className={`${styles.navbar}`}>
           <div className={`${styles.title}`}>
-            <img src={logopng} />
+            <img src={logopng} style={{height: '20px', width: '20px', marginRight: '5px'}}/>
+            <h3>System and Logs Generator</h3>
           </div>
           <ul className={`${styles.navMenu} ${isActive ? styles.active : ''}`}>
             <li className={`${hover1 ? styles.hover : styles.none}`} onMouseOver={() => { setHover1(true) }} onMouseLeave={() => { setHover1(false) }}>
