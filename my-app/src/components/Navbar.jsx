@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 import styles from './Navbar.module.css';
 import Dropdown from './Dropdown';
 import logopng from './Assets/metrics-gray.png'
-import metricslogo from './Assets/list.png'
+import metricslogo from './Assets/logog.png'
 import Logslogo from './Assets/list.png'
 
 function Navbar({onDurationChange, OnClick}) {
