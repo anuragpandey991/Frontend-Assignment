@@ -10,7 +10,7 @@ Dynamic Charts: Renders four dynamic charts (CPU usage, Network usage, Memory us
 # Challenges Faced
 The development process encountered challenges, particularly in synchronizing data between components and passing it effectively.
 
-# Failed Features (To be Implemented in Future)
+# To be Implemented in Future:
 Although significant progress was made, a few features were not fully implemented:
 
 URL State Reflection: All states of logs (filters) should reflect in the URL for easy sharing and bookmarking.
