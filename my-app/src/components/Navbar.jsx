@@ -29,7 +29,7 @@ function Navbar({onDurationChange, OnClick}) {
         <nav className={`${styles.navbar}`}>
           <div className={`${styles.title}`}>
             <img src={logopng} style={{height: '20px', width: '20px', marginRight: '5px'}}/>
-            <h3>System and Logs Generator</h3>
+            <h3>System Logs and Metrics</h3>
           </div>
           <ul className={`${styles.navMenu} ${isActive ? styles.active : ''}`}>
             <li className={`${hover1 ? styles.hover : styles.none}`} onMouseOver={() => { setHover1(true) }} onMouseLeave={() => { setHover1(false) }}>
